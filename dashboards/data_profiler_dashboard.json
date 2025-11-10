@@ -1,3 +1,18 @@
 {
-  "dashboard": "Template placeholder. Use Databricks UI to create visualizations."
+  "title": "Simple Data Profiler Dashboard",
+  "description": "Visualizes table_profile output",
+  "widgets": [
+    {
+      "type": "table",
+      "query": "SELECT * FROM table_profile"
+    },
+    {
+      "type": "chart",
+      "query": "SELECT column_name, null_rate FROM table_profile"
+    },
+    {
+      "type": "chart",
+      "query": "SELECT column_name, date_match FROM table_profile"
+    }
+  ]
 }

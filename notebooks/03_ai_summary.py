@@ -1,9 +1,8 @@
-# Notebook 03 — AI Summary Notebook
-# Databricks Assistant can generate verbal summaries using the table_profile data.
-# Example:
+# Notebook 03 — AI Summary
 
 # MAGIC %sql
-# SELECT * FROM {catalog}.{target_schema}.table_profile LIMIT 50;
+# SELECT * FROM {catalog}.{target_schema}.table_profile LIMIT 200;
 
 # Ask Databricks AI:
-# "Explain the columns with highest null_rate."
+# "Summarize which columns look like dates."
+# "Which columns have high null percentages?"
